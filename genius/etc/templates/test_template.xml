@@ -1,0 +1,314 @@
+<negotiation_template number_of_sessions="5"> 
+<agent class="negotiator.agents.SimpleAgent" name="AgentA" utility_space="agent_a_space.xml"> 
+ 
+ 
+</agent> 
+<agent class="negotiator.agents.SimpleAgent" name="AgentB" utility_space="agent_b_space.xml"> 
+ 
+ 
+</agent> 
+<utility_space number_of_issues="3"> 
+<issue index="1" name="First Issue"> 
+<item index="1" value="0"> 
+ 
+ 
+</item> 
+<item index="2" value="100"> 
+ 
+ 
+</item> 
+<item index="3" value="200"> 
+ 
+ 
+</item> 
+<item index="4" value="unspecified"> 
+ 
+ 
+</item> 
+ 
+ 
+</issue> 
+<issue index="2" name="Second Issue"> 
+<item index="1" value="0-500"> 
+ 
+ 
+</item> 
+<item index="2" value="501-600"> 
+ 
+ 
+</item> 
+<item index="3" value="unspecified"> 
+ 
+ 
+</item> 
+ 
+ 
+</issue> 
+<issue index="3" name="Third Issue"> 
+<item index="1" value="0 days"> 
+ 
+ 
+</item> 
+<item index="2" value="2 days"> 
+ 
+ 
+</item> 
+<item index="3" value="unspecified"> 
+ 
+ 
+</item> 
+ 
+ 
+</issue> 
+ 
+ 
+</utility_space> 
+<analysis> 
+<pareto> 
+<bid> 
+<issue index="1" type="discrete"> 
+<item value="200"> 
+</item> 
+</issue> 
+<issue index="2" type="discrete"> 
+<item value="unspecified"> 
+</item> 
+</issue> 
+<issue index="3" type="discrete"> 
+<item value="unspecified"> 
+</item> 
+</issue> 
+</bid> 
+<bid> 
+<issue index="1" type="discrete"> 
+<item value="100"> 
+</item> 
+</issue> 
+<issue index="2" type="discrete"> 
+<item value="unspecified"> 
+</item> 
+</issue> 
+<issue index="3" type="discrete"> 
+<item value="unspecified"> 
+</item> 
+</issue> 
+</bid> 
+<bid> 
+<issue index="1" type="discrete"> 
+<item value="200"> 
+</item> 
+</issue> 
+<issue index="2" type="discrete"> 
+<item value="501-600"> 
+</item> 
+</issue> 
+<issue index="3" type="discrete"> 
+<item value="unspecified"> 
+</item> 
+</issue> 
+</bid> 
+<bid> 
+<issue index="1" type="discrete"> 
+<item value="100"> 
+</item> 
+</issue> 
+<issue index="2" type="discrete"> 
+<item value="501-600"> 
+</item> 
+</issue> 
+<issue index="3" type="discrete"> 
+<item value="unspecified"> 
+</item> 
+</issue> 
+</bid> 
+<bid> 
+<issue index="1" type="discrete"> 
+<item value="200"> 
+</item> 
+</issue> 
+<issue index="2" type="discrete"> 
+<item value="0-500"> 
+</item> 
+</issue> 
+<issue index="3" type="discrete"> 
+<item value="unspecified"> 
+</item> 
+</issue> 
+</bid> 
+<bid> 
+<issue index="1" type="discrete"> 
+<item value="200"> 
+</item> 
+</issue> 
+<issue index="2" type="discrete"> 
+<item value="unspecified"> 
+</item> 
+</issue> 
+<issue index="3" type="discrete"> 
+<item value="0 days"> 
+</item> 
+</issue> 
+</bid> 
+<bid> 
+<issue index="1" type="discrete"> 
+<item value="100"> 
+</item> 
+</issue> 
+<issue index="2" type="discrete"> 
+<item value="0-500"> 
+</item> 
+</issue> 
+<issue index="3" type="discrete"> 
+<item value="unspecified"> 
+</item> 
+</issue> 
+</bid> 
+<bid> 
+<issue index="1" type="discrete"> 
+<item value="100"> 
+</item> 
+</issue> 
+<issue index="2" type="discrete"> 
+<item value="unspecified"> 
+</item> 
+</issue> 
+<issue index="3" type="discrete"> 
+<item value="0 days"> 
+</item> 
+</issue> 
+</bid> 
+<bid> 
+<issue index="1" type="discrete"> 
+<item value="0"> 
+</item> 
+</issue> 
+<issue index="2" type="discrete"> 
+<item value="0-500"> 
+</item> 
+</issue> 
+<issue index="3" type="discrete"> 
+<item value="unspecified"> 
+</item> 
+</issue> 
+</bid> 
+<bid> 
+<issue index="1" type="discrete"> 
+<item value="200"> 
+</item> 
+</issue> 
+<issue index="2" type="discrete"> 
+<item value="501-600"> 
+</item> 
+</issue> 
+<issue index="3" type="discrete"> 
+<item value="0 days"> 
+</item> 
+</issue> 
+</bid> 
+<bid> 
+<issue index="1" type="discrete"> 
+<item value="200"> 
+</item> 
+</issue> 
+<issue index="2" type="discrete"> 
+<item value="0-500"> 
+</item> 
+</issue> 
+<issue index="3" type="discrete"> 
+<item value="2 days"> 
+</item> 
+</issue> 
+</bid> 
+<bid> 
+<issue index="1" type="discrete"> 
+<item value="100"> 
+</item> 
+</issue> 
+<issue index="2" type="discrete"> 
+<item value="501-600"> 
+</item> 
+</issue> 
+<issue index="3" type="discrete"> 
+<item value="0 days"> 
+</item> 
+</issue> 
+</bid> 
+<bid> 
+<issue index="1" type="discrete"> 
+<item value="200"> 
+</item> 
+</issue> 
+<issue index="2" type="discrete"> 
+<item value="0-500"> 
+</item> 
+</issue> 
+<issue index="3" type="discrete"> 
+<item value="0 days"> 
+</item> 
+</issue> 
+</bid> 
+<bid> 
+<issue index="1" type="discrete"> 
+<item value="100"> 
+</item> 
+</issue> 
+<issue index="2" type="discrete"> 
+<item value="0-500"> 
+</item> 
+</issue> 
+<issue index="3" type="discrete"> 
+<item value="0 days"> 
+</item> 
+</issue> 
+</bid> 
+<bid> 
+<issue index="1" type="discrete"> 
+<item value="0"> 
+</item> 
+</issue> 
+<issue index="2" type="discrete"> 
+<item value="0-500"> 
+</item> 
+</issue> 
+<issue index="3" type="discrete"> 
+<item value="0 days"> 
+</item> 
+</issue> 
+</bid> 
+</pareto> 
+<kalai_smorodinsky> 
+<bid> 
+<issue index="1" type="discrete"> 
+<item value="100"> 
+</item> 
+</issue> 
+<issue index="2" type="discrete"> 
+<item value="501-600"> 
+</item> 
+</issue> 
+<issue index="3" type="discrete"> 
+<item value="unspecified"> 
+</item> 
+</issue> 
+</bid> 
+</kalai_smorodinsky> 
+<nash> 
+<bid> 
+<issue index="1" type="discrete"> 
+<item value="200"> 
+</item> 
+</issue> 
+<issue index="2" type="discrete"> 
+<item value="0-500"> 
+</item> 
+</issue> 
+<issue index="3" type="discrete"> 
+<item value="unspecified"> 
+</item> 
+</issue> 
+</bid> 
+</nash> 
+</analysis> 
+ 
+ 
+</negotiation_template> 
