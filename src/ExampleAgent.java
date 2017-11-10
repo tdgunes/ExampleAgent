@@ -22,10 +22,7 @@ public class ExampleAgent extends AbstractNegotiationParty {
     @Override
     public void init(NegotiationInfo info) {
         super.init(info);
-
-        System.out.println("Discount Factor is " + info.getUtilitySpace().getDiscountFactor());
-        System.out.println("Reservation Value is " + info.getUtilitySpace().getReservationValueUndiscounted());
-
+    
     }
 
     /**
