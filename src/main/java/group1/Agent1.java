@@ -1,3 +1,6 @@
+package group1;
+
+import com.google.common.collect.Lists;
 import negotiator.AgentID;
 import negotiator.Bid;
 import negotiator.actions.Accept;
@@ -9,11 +12,11 @@ import negotiator.parties.NegotiationInfo;
 import java.util.List;
 
 /**
- * ExampleAgent returns the bid that maximizes its own utility for half of the negotiation session.
+ * group1.Agent1 returns the bid that maximizes its own utility for half of the negotiation session.
  * In the second half, it offers a random bid. It only accepts the bid on the table in this phase,
  * if the utility of the bid is higher than Example Agent's last bid.
  */
-public class ExampleAgent extends AbstractNegotiationParty {
+public class Agent1 extends AbstractNegotiationParty {
     private final String description = "Example Agent";
 
     private Bid lastReceivedOffer; // offer on the table
@@ -22,6 +25,8 @@ public class ExampleAgent extends AbstractNegotiationParty {
     @Override
     public void init(NegotiationInfo info) {
         super.init(info);
+
+        List<Bid> bidList = Lists.newArrayList();
 
         System.out.println("Discount Factor is " + info.getUtilitySpace().getDiscountFactor());
         System.out.println("Reservation Value is " + info.getUtilitySpace().getReservationValueUndiscounted());
@@ -35,7 +40,6 @@ public class ExampleAgent extends AbstractNegotiationParty {
      * @param list
      * @return
      */
-    @Override
     public Action chooseAction(List<Class<? extends Action>> list) {
         // According to Stacked Alternating Offers Protocol list includes
         // Accept, Offer and EndNegotiation actions only.
@@ -43,6 +47,7 @@ public class ExampleAgent extends AbstractNegotiationParty {
                                                // The time is normalized, so agents need not be
                                                // concerned with the actual internal clock.
 
+        System.out.println(time);
 
         // First half of the negotiation offering the max utility (the best agreement possible) for Example Agent
         if (time < 0.5) {
@@ -85,7 +90,7 @@ public class ExampleAgent extends AbstractNegotiationParty {
      * A human-readable description for this party.
      * @return
      */
-    @Override
+
     public String getDescription() {
         return description;
     }

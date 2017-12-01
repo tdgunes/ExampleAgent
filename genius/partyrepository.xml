@@ -363,9 +363,6 @@
             <partyRepItem classPath="negotiator.parties.FeedbackHillClimber">
                 <properties/>
             </partyRepItem>
-            <partyRepItem classPath="/Users/testuser/Projects/ExampleAgent/out/production/ExampleAgent/ExampleAgent.class">
-                <properties/>
-            </partyRepItem>
         </partyRepItems>
         <domainRepItem/>
         <protocolRepItem/>
