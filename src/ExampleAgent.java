@@ -1,12 +1,12 @@
-import negotiator.AgentID;
-import negotiator.Bid;
-import negotiator.actions.Accept;
-import negotiator.actions.Action;
-import negotiator.actions.Offer;
-import negotiator.parties.AbstractNegotiationParty;
-import negotiator.parties.NegotiationInfo;
-
 import java.util.List;
+
+import genius.core.AgentID;
+import genius.core.Bid;
+import genius.core.actions.Accept;
+import genius.core.actions.Action;
+import genius.core.actions.Offer;
+import genius.core.parties.AbstractNegotiationParty;
+import genius.core.parties.NegotiationInfo;
 
 /**
  * ExampleAgent returns the bid that maximizes its own utility for half of the negotiation session.
